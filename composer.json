@@ -1,0 +1,26 @@
+{
+    "name": "primephp/application",
+    "description": "Skeleton para aplicação com PrimePHP Framework",
+    "authors": [
+        {
+            "name": "Tom Sailor",
+            "email": "www.eltonluiz@hotmail.com"
+        }
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/primephp/application/issues",
+        "source": "https://github.com/primephp/application"
+    },
+    "require": {
+        "php": ">=5.6",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "primephp/framework": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
