@@ -1,2 +1,2 @@
-# PrimePHP Framework
-Toolkit de Componentes para criação de aplicações PHP em camadas e modularizada
+# PrimePHP Application
+Skeleton PrimePHP para criação de aplicações PHP em camadas e modularizada
