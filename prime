@@ -37,7 +37,7 @@ $dataDbConnect = FALSE;
 $fileDatabase = __DIR__ . '/config/database.php';
 if (file_exists($fileDatabase)) {
     $dataDbConnect = require $fileDatabase;
-    Connection::open($dataDbConnect);
+    Connection::config($dataDbConnect);
 }
 
 $application = new Application();
