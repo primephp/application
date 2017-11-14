@@ -1,6 +1,6 @@
 <?php
 
-return [
+$database['default'] = [
     /*
       |-------------------------------------------------------------------------
       | Drive de Conexão
@@ -67,3 +67,37 @@ return [
      */
     'charset' => 'dbcharset'
 ];
+
+//conexao com sqlite
+$databases['database2'] = [
+    'type' => 'sqlite',
+    'user' => null,
+    'pass' => null,
+    'name' => '/path/mydb.sq3',
+    'params' => [
+        PDO::ATTR_PERSISTENT => true
+    ]
+];
+//conexão com ODBC
+$databses['database3'] = [
+    'type' => 'odbc',
+    'params' => [
+        PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY,
+        PDO::ATTR_CASE => PDO::CASE_LOWER,
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    ],
+];
+//conexao com mssql
+$databases['database4'] = [
+    'type' => 'mssql',
+    'host' => 'localhost',
+    'user' => 'username',
+    'pass' => 'minhasenha',
+    'name' => 'dbname',
+        /* 'params' => array(
+          PDO::ATTR_PERSISTENT => true, //conexão persistente
+          PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+          ) */
+];
+
+return $databases;
