@@ -69,7 +69,7 @@ $database['default'] = [
 ];
 
 //conexao com sqlite
-$databases['database2'] = [
+$database['database2'] = [
     'type' => 'sqlite',
     'user' => null,
     'pass' => null,
@@ -79,7 +79,7 @@ $databases['database2'] = [
     ]
 ];
 //conexão com ODBC
-$databses['database3'] = [
+$database['database3'] = [
     'type' => 'odbc',
     'params' => [
         PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY,
@@ -88,7 +88,7 @@ $databses['database3'] = [
     ],
 ];
 //conexao com mssql
-$databases['database4'] = [
+$database['database4'] = [
     'type' => 'mssql',
     'host' => 'localhost',
     'user' => 'username',
@@ -100,4 +100,4 @@ $databases['database4'] = [
           ) */
 ];
 
-return $databases;
+return $database;
