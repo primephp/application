@@ -65,7 +65,16 @@ $database['default'] = [
       | Porta para acesso à base de dados
       |
      */
-    'charset' => 'dbcharset'
+    'charset' => 'dbcharset',
+    
+    'params' => [
+        // define para que o PDO lance exceções na ocorrência de erros
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
+        // para lançar exceção e debugar
+        // PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_CASE => PDO::CASE_LOWER,
+        PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY,
+    ]
 ];
 
 //conexao com sqlite
