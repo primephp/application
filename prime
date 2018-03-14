@@ -2,7 +2,7 @@
 <?php
 
 use Prime\Console\Application;
-use Prime\Model\DataSource\Connection;
+use Prime\Database\Connection;
 
 // prime.php
 
